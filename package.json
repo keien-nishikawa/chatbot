@@ -1,0 +1,39 @@
+{
+  "name": "chatbot",
+  "version": "0.0.0",
+  "description": "sample app chatbot",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "chmod:pre-commit": "chmod +x .husky/pre-commit",
+    "prepare": "husky install",
+    "lint": "eslint src . --ext .js,.ts,.tsx --cache",
+    "format": "eslint --fix . --ext .js,.ts,.tsx --fix --cache",
+    "eslint": "npm run format && npm run lint"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": "14"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4",
+    "vite": "^2.9.9",
+    "vite-plugin-solid": "^2.2.6"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.13.0",
+    "@typescript-eslint/parser": "^4.13.0",
+    "eslint": "^7.17.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-unused-imports": "^1.1.0",
+    "husky": "^7.0.0",
+    "prettier": "^2.4.1",
+    "solid-app-router": "^0.3.3",
+    "solid-js": "^1.4.2",
+    "typescript": "^4.4.4"
+  }
+}
